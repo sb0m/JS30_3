@@ -1,0 +1,50 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+*{
+	margin:0;
+	padding:0;
+}
+
+
+/*-------------------------
+	General Styles
+--------------------------
+test {
+    #1c2124
+    color: #424c55; rgba(66, 76, 85, 0.5);
+    color: #2e86ab;
+    color: #084c61;
+    color: #a1d2ce;
+    color: #e7ecef;
+}*/
+
+:root {
+    --base: #2e86ab;
+    --spacing: 10px;
+    --blur: 2px;
+}
+
+body{
+	font: 11px 'Open Sans', sans-serif;
+	color: #ecebe4;
+	text-align:center;
+    background-color: #424c55;
+    padding: 3em;
+}
+
+.controls {
+    padding:2em;
+}
+
+img {
+    width: 100%;
+    /*use the var from root*/
+    padding: var(--spacing);
+    background-color: var(--base); 
+    filter: blur(var(--blur));
+}
+
+.h1 {
+    color: var(--base);
+}
